@@ -1,3 +1,4 @@
+package com.twilio;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -10,21 +11,13 @@ public class TwilioServlet extends HttpServlet {
 
   // service() responds to both GET and POST requests.
   // You can also use doGet() or doPost()
-  @Override
-  public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
+  public void service(HttpServletRequest request, HttpServletResponse response) throws Exception {
     TwiMLResponse twiml = new TwiMLResponse();
     String userInput = request.getParameter("Body"); 
-    try {
-      Message message = new Message(HackWix.interpretSMS(userInput));
-     
-      twiml.append(message);
-    } catch (TwiMLException e) {
-      e.printStackTrace();
-    }
-    catch (Exception e)
-    {
-      e.printStackTrace();
-    }
+    Message message = new Message(HackWix.interpretSMS(userInput));
+
+
+    twiml.append(message);
 
     response.setContentType("application/xml");
     response.getWriter().print(twiml.toXML());
