@@ -15,17 +15,17 @@ We get live financial feed data from Bloomberg API, and receive and send SMS thr
 This program was intended for businessmen who are always on the move and not always have access to the internet; and people interested in following their stock prices.
 
 Examples of use:
-"<stock name> stocks"
+"&lt;stock name&gt; stocks"
 - GOOG stocks
-=> GOOG's current price is USD 544.4
+=&gt; GOOG's current price is USD 544.4
 
-"<currency from><currency to> currency"
+"&lt;currency from&gt;&lt;currency to&gt; currency"
 - XAUGBP currency
-=> The exchange rate XAU -> GBP is 758.58
+=&gt; The exchange rate XAU -&gt; GBP is 758.58
 
-"<amount> <currency from><currency to> currency"
+"&lt;amount&gt; &lt;currency from&gt;&lt;currency to&gt; currency"
 - 13.37 XAUGBP
-=> 13.37 XAU = 1042.21 GBP. The exchange rate XAU -> GBP is 758.58
+=&gt; 13.37 XAU = 1042.21 GBP. The exchange rate XAU -&gt; GBP is 758.58
 ===================================
 
 Created:
