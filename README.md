@@ -30,7 +30,7 @@ Examples of use:
 
 Created:
 By 
-  Dainis Gorbunovs: https://github.com/hackath
+  Dainis Gorbunovs: https://github.com/DainisGorbunovs
 & Sami Alabed: https://github.com/SamiAlabed
 
 During WarwickHACK in 15th November 2014.
