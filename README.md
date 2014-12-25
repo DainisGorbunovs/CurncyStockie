@@ -5,6 +5,7 @@ Instructions:
 Add it to your tomcat apache client
 clone folders into /webpages/sms/WEB-INF
 
+Test
 ===============
 We wanted to create a mobile enquiry centre, which provides the latest financial data to the users through SMS.
 
